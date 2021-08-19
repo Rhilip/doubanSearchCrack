@@ -1,4 +1,5 @@
 import XXH from 'xxhashjs'
+import * as types from './types';
 import {parseBPlist} from "./utils/bplist";
 import RC4 from './utils/rc4';
 import fixture from "./utils/fixture";
@@ -12,7 +13,7 @@ export function extractDataFromPage(page: string): string {
 }
 
 // noinspection JSUnusedGlobalSymbols
-export default function decryptDoubanData(dataRawString: string) {
+export default function decryptDoubanData(dataRawString: string): types.searchData {
     // 将网页字符串解析为base64
     const dataRaw = Buffer.from(dataRawString, 'base64')
 
