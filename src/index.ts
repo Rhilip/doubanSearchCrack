@@ -1,5 +1,5 @@
 import XXH from 'xxhashjs'
-import * as types from './types';
+import * as types from './utils/types';
 import {parseBPlist} from "./utils/bplist";
 import RC4 from './utils/rc4';
 import fixture from "./utils/fixture";

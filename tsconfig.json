@@ -2,8 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2018",
-    "sourceMap": true,
-    "sourceRoot": "src",
+    "sourceMap": false,
     "outDir": "dist",
     "declaration": true,
     "moduleResolution": "node",

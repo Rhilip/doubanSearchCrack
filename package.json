@@ -1,6 +1,6 @@
 {
   "name": "douban-search-crack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Crack Douban DATA from search page",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,8 +13,7 @@
     "build:browser": "browserify src/index.ts -p [ tsify --noImplicitAny ] -p tinyify > dist/bundle.js"
   },
   "files": [
-    "dist/*.js",
-    "dist/**/&.js"
+    "dist/**/*"
   ],
   "dependencies": {
     "xxhashjs": "^0.2.2"
