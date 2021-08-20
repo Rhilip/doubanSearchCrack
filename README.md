@@ -13,9 +13,9 @@ Based on:
 
 ```javascript
 import axios from 'axios';
-import { extractDataFromPage, decryptDoubanData } from 'douban-search-crack';
+import decryptDoubanData, { extractDataFromPage } from 'douban-search-crack';
 
-const { data: doubanSearchPage } = axios.get('https://search.douban.com/movie/subject_search', {
+const { data: doubanSearchPage } = await axios.get('https://search.douban.com/movie/subject_search', {
   params: {
     search_text: '肖申克的救赎',
     cat: 1002
