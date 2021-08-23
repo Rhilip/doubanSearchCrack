@@ -1,6 +1,6 @@
 {
   "name": "douban-search-crack",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Crack Douban DATA from search page",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,6 +12,7 @@
     "build:module": "tsc",
     "build:browser": "browserify src/index.ts -p [ tsify --noImplicitAny ] -p tinyify > dist/bundle.js"
   },
+  "repository": "github:Rhilip/doubanSearchCrack",
   "files": [
     "dist/**/*"
   ],
