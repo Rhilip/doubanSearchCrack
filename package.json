@@ -1,6 +1,6 @@
 {
   "name": "douban-search-crack",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Crack Douban DATA from search page",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,10 @@
   },
   "repository": "github:Rhilip/doubanSearchCrack",
   "files": [
-    "dist/**/*"
+    "dist/utils/*.js",
+    "dist/index.js",
+    "dist/bundle.js",
+    "dist/index.d.ts"
   ],
   "dependencies": {
     "xxhashjs": "^0.2.2"

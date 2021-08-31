@@ -1,8 +1,22 @@
 import XXH from 'xxhashjs'
-import * as types from './utils/types';
-import {parseBPlist} from "./utils/bplist";
+import { parseBPlist } from "./utils/bplist";
 import RC4 from './utils/rc4';
 import fixture from "./utils/fixture";
+
+export type itemType = any
+
+export interface searchData {
+    start: number,
+    total: number,
+    error_info: string,
+    count: number,
+    report: {
+        qtype: `${number}`,
+        tags: string
+    },
+    text: string,
+    items: itemType[]
+}
 
 // noinspection JSUnusedGlobalSymbols
 export function extractDataFromPage(page: string): string {
@@ -13,7 +27,7 @@ export function extractDataFromPage(page: string): string {
 }
 
 // noinspection JSUnusedGlobalSymbols
-export default function decryptDoubanData(dataRawString: string): types.searchData {
+export default function decryptDoubanData(dataRawString: string): searchData {
     // 将网页字符串解析为base64
     const dataRaw = Buffer.from(dataRawString, 'base64')
 
